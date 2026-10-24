@@ -5,6 +5,5 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
-PAYMENT_PROVIDER_TOKEN = os.getenv('PAYMENT_PROVIDER_TOKEN')
 DATABASE_URL = os.getenv('DATABASE_URL')
 
