@@ -372,6 +372,13 @@ def main():
            .token(TELEGRAM_TOKEN)
            .concurrent_updates(True)
            .post_init(post_init)
+           # PROXY
+           #.proxy('socks5://127.0.0.1:1080')
+           #.get_updates_proxy('socks5://127.0.0.1:1080')
+           .connect_timeout(30)
+           .read_timeout(30)
+           .write_timeout(30)
+           .pool_timeout(30)
            .build())
 
     commands = {
